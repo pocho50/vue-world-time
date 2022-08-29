@@ -1,33 +1,27 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import UnoCSS from 'unocss/vite'
-import {presetUno, presetAttributify, presetIcons} from 'unocss'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import Components from "unplugin-vue-components/vite";
+import AutoImport from "unplugin-auto-import/vite";
+import UnoCSS from "unocss/vite";
+import { presetUno, presetAttributify, presetIcons } from "unocss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(), 
-    Components(), 
+    vue(),
+    Components(),
     AutoImport({
-      imports: [
-        'vue'
-      ]
+      imports: ["vue"],
     }),
     UnoCSS({
-      presets: [
-        presetUno(),
-        presetAttributify(),
-        presetIcons()
-      ]
-    })
+      presets: [presetUno(), presetAttributify(), presetIcons()],
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
+});

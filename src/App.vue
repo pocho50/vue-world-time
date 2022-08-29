@@ -1,13 +1,10 @@
 <script setup lang="ts">
-//import Hello from "./components/Hello.vue";
 </script>
 
-<template>
-  <Hello />
-</template>
+<template></template>
 
 <style>
-html{
+html {
   background: #222;
   color: white;
   color-scheme: dark;
