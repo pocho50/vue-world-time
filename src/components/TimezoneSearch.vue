@@ -15,8 +15,6 @@ const searchResult = computed(() => fuse.search(input.value))
 const add = (t: Timezone) => {
     addToItemzone(t)
     input.value = ''
-
-
 }
 </script>
 

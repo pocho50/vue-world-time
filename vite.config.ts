@@ -13,7 +13,7 @@ export default defineConfig({
     vue(),
     Components(),
     AutoImport({
-      imports: ["vue"],
+      imports: ["vue", "@vueuse/core"],
     }),
     UnoCSS({
       presets: [presetUno(), presetAttributify(), presetIcons()],

@@ -2,5 +2,5 @@
 import { zones } from '../composables/state'
 </script>
 <template>
-    {{ zones }}
+    <div p4>{{ zones }}</div>
 </template>

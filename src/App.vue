@@ -1,18 +1,21 @@
 <script setup lang="ts">
+import Navbar1 from "./components/Navbar.vue";
 
 </script>
 
 <template>
-  <div border="~ gray/20" m2 p2>
-    <ActionBar />
-    <TimeSchedular />
+  <div bg-gray:15 h-screen>
+    <Navbar />
+    <div border="~ gray/20" bg-white shadow m2 p2 dark:bg-truegray-900>
+      <ActionBar />
+      <TimeSchedular />
+    </div>
   </div>
-
 
 </template>
 
 <style>
-html {
+.dark {
   background: #222;
   color: white;
   color-scheme: dark;
