@@ -1,6 +1,7 @@
 import { timezones } from "../composables/data";
 import type { Timezone } from "../types";
 
+export const now = useNow({ interval: 30_000 });
 const zoneNames = useStorage<string[]>("world-time-zones", []);
 
 export const zones = computed(
