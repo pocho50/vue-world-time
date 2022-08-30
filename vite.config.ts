@@ -17,6 +17,9 @@ export default defineConfig({
     }),
     UnoCSS({
       presets: [presetUno(), presetAttributify(), presetIcons()],
+      shortcuts: {
+        "icon-btn": "op50 hover:op100",
+      },
     }),
   ],
   resolve: {

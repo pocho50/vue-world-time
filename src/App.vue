@@ -6,7 +6,7 @@ import Navbar1 from "./components/Navbar.vue";
 <template>
   <div bg-gray:15 h-screen>
     <Navbar />
-    <div border="~ gray/20" bg-white shadow m2 p2 dark:bg-truegray-900>
+    <div border="~ gray/20" bg-white shadow m2 p2 dark:bg-truegray-900 mx-5>
       <ActionBar />
       <TimeSchedular />
     </div>
