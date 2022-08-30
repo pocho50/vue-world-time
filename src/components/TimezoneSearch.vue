@@ -39,7 +39,7 @@ const onKeyDown = (e: KeyboardEvent) => {
     <div relative>
         <input @keydown="onKeyDown" v-model="input" type="text" placeholder="Search timezone" p-2 px2 px1
             border="~ gray/15 rounded" bg-transparent w-full>
-        <div v-show="input" absolute top-full left-0 right-0 bg-gray-900 max-h-50 overflow-auto>
+        <div v-show="input" absolute z-10 rounded shadow top-full left-0 right-0 bg-gray-900 max-h-50 overflow-auto>
             <div v-for="i, idx in searchResult" :key="i.refIndex" class="flex-col">
 
                 <button w-full @click="add(i.item)" :key="i.refIndex" :class="idx === index ? 'bg-gray:5' : ''">
